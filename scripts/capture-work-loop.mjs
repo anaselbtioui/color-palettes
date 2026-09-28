@@ -46,8 +46,8 @@ if (!/^[a-z0-9][a-z0-9_-]*$/.test(slug)) {
 
 mkdirSync(RAW_DIR, { recursive: true });
 
-const VW = 800;
-const VH = 1000;
+const VW = Number(process.env.CAPTURE_WIDTH || 800);
+const VH = Number(process.env.CAPTURE_HEIGHT || 1000);
 const PAD = 48;
 const FPS = 8; // capture fps; make-work-gif later drops to ~3
 
