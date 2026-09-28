@@ -127,11 +127,11 @@ const palettes = [
     description: "A dark blue-grey base meets bright coral and warm white. Use it for tools that make communication feel immediate.",
     colors: ["#17252B", "#334B56", "#FF5C5C", "#F8F4EA"],
     referenceType: "Website inspiration",
-    reference: "Wispr Flow. Dark product framing, vivid coral action color, and a warm interface built around effortless voice input.",
+    reference: "Wispr Flow product UI. Soft panels, warm white surfaces, dark blue-grey framing, and vivid coral action color make voice input feel immediate.",
     sceneImage: "media/work/wisprflow.gif",
     referenceSource: "https://wisprflow.ai/",
     referenceTag: "Website",
-    prompt: "Adapt Voice Current to my project. Study Wispr Flow's dark blue-grey framing, vivid coral action color, and warm white surfaces. Use coral for direct action and active feedback. Keep the interface fast, friendly, and focused on reducing friction.",
+    prompt: "Adapt Voice Current to my project. Study Wispr Flow's downloaded product UI: soft panels, warm white surfaces, dark blue-grey framing, and vivid coral action color. Use coral for direct action and active feedback. Keep the interface fast, friendly, and focused on reducing friction.",
   },
 ];
 
