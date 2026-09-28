@@ -121,6 +121,18 @@ const palettes = [
     referenceTag: "Website",
     prompt: "Adapt Moss Catalog to my project. Study Huts' coffee parchment, walnut ink, moss accent, and pastoral catalog rhythm. Use paper as the main surface, walnut for text, and moss for selected states. Keep the interface tactile and unhurried.",
   },
+  {
+    name: "Voice Current",
+    mood: "Soft utility, human signal",
+    description: "A dark blue-grey base meets bright coral and warm white. Use it for tools that make communication feel immediate.",
+    colors: ["#17252B", "#334B56", "#FF5C5C", "#F8F4EA"],
+    referenceType: "Website inspiration",
+    reference: "Wispr Flow. Dark product framing, vivid coral action color, and a warm interface built around effortless voice input.",
+    sceneImage: "media/work/wisprflow.gif",
+    referenceSource: "https://wisprflow.ai/",
+    referenceTag: "Website",
+    prompt: "Adapt Voice Current to my project. Study Wispr Flow's dark blue-grey framing, vivid coral action color, and warm white surfaces. Use coral for direct action and active feedback. Keep the interface fast, friendly, and focused on reducing friction.",
+  },
 ];
 
 const STORAGE_KEY = "chromatic-index:selected-palette";
@@ -173,6 +185,10 @@ const thinking = {
   "Moss Catalog": {
     why: "Walnut anchors the palette. Coffee paper adds tactility. Moss gives collection and growth a quiet signal.",
     use: "Libraries, marketplaces, cultural archives, hospitality, or slow catalog experiences.",
+  },
+  "Voice Current": {
+    why: "Dark blue-grey gives focus. Coral creates immediate action. Warm white keeps the experience human and readable.",
+    use: "Voice tools, productivity software, communication products, or interfaces built around quick input.",
   },
 };
 const elements = {
