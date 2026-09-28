@@ -1,0 +1,5 @@
+node_modules/
+.vercel/
+.env
+.env.*
+media/work/_raw/

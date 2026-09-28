@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A small, thoughtful palette library for art direction and interface design."
+    />
+    <title>Chromatic Index</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="/" aria-label="Chromatic Index home">
+          <span class="wordmark-mark" aria-hidden="true"></span>
+          <span>Chromatic Index</span>
+        </a>
+        <nav class="topnav" aria-label="Page navigation">
+          <a href="#palettes">Palettes</a>
+          <a href="#thinking">Thinking</a>
+        </nav>
+      </header>
+
+      <div class="workspace">
+        <section class="palette-column" id="palettes" aria-labelledby="palette-heading">
+          <div class="palette-actions">
+            <h1 id="page-title">Color palettes</h1>
+            <button class="button button-dark" id="shuffle-button" type="button">
+              <span>New palette</span>
+              <span class="button-icon" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="palette-list" id="palette-list"></div>
+        </section>
+
+        <section class="detail-panel" aria-live="polite" aria-labelledby="detail-title">
+          <div class="detail-topline">
+            <h2 id="detail-title">Night Orchard</h2>
+            <button class="button button-copy-detail" id="copy-button" type="button">
+              <span>Copy prompt</span>
+              <span class="button-icon" aria-hidden="true">↗</span>
+            </button>
+          </div>
+
+          <div class="swatch-hero" id="swatch-hero" aria-label="Selected palette colors"></div>
+
+          <div class="detail-content" id="thinking">
+            <div class="detail-heading">
+              <p id="detail-description"></p>
+            </div>
+
+            <div class="thinking-grid" aria-label="Palette thinking">
+              <article>
+                <h3>Why it works</h3>
+                <p id="why-works"></p>
+              </article>
+              <article>
+                <h3>Possible use</h3>
+                <p id="possible-use"></p>
+              </article>
+            </div>
+
+            <div class="use-grid">
+              <div class="section-kicker">Inspiration</div>
+              <article class="use-block">
+                <div class="scene-still" id="scene-still"></div>
+                <p class="reference-title" id="reference-example"></p>
+                <a class="source-link" id="reference-source" target="_blank" rel="noreferrer">Open reference</a>
+              </article>
+            </div>
+
+            <div class="prompt-block">
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
