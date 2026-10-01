@@ -133,6 +133,42 @@ const palettes = [
     referenceTag: "Website",
     prompt: "Adapt Voice Current to my project. Study Wispr Flow's downloaded product UI: soft panels, warm white surfaces, dark blue-grey framing, and vivid coral action color. Use coral for direct action and active feedback. Keep the interface fast, friendly, and focused on reducing friction.",
   },
+  {
+    name: "Scarlet Throne",
+    mood: "Worn red, cold stone",
+    description: "Near-black stone, charcoal wall, and a cold arch. Red stays on the figure that has already paid the cost.",
+    colors: ["#100A09", "#342F33", "#7C7F84", "#B73630"],
+    referenceType: "Cover reference",
+    reference: "Daredevil (1998) #50, Hardcore, Part 5. Brian Michael Bendis and Alex Maleev. Unmasked Matt slumped in a stone chair under a cold arch, red costume carrying the fight.",
+    sceneImage: "assets/comic_panels/daredevil.jpeg",
+    referenceSource: "https://www.marvel.com/comics/issue/15654/daredevil_1998_50",
+    referenceTag: "Comic",
+    prompt: "Use Scarlet Throne as the visual direction for my project. Study the cover of Daredevil (1998) #50, Hardcore, Part 5, by Brian Michael Bendis and Alex Maleev. Build from near-black stone, charcoal, and cold arch grey. Reserve #B73630 for the state that has already cost something. Keep the interface heavy, quiet, and physical.",
+  },
+  {
+    name: "When It Counts",
+    mood: "Primary ink, hard strain",
+    description: "Black ink under the machinery, Ditko blue and red, and flat yellow captions. Yellow is the voice that keeps the lift going.",
+    colors: ["#080A08", "#0C499C", "#F4431B", "#FDFC40"],
+    referenceType: "Panel reference",
+    reference: "The Amazing Spider-Man (1963) #33, The Final Chapter. Stan Lee and Steve Ditko. Page 4: Spider-Man under the machinery, red and blue against black ink, yellow captions, white water and green rubble.",
+    sceneImage: "assets/comic_panels/spider-man.jpeg",
+    referenceSource: "https://www.marvel.com/comics/issue/6738/the_amazing_spider-man_1963_33",
+    referenceTag: "Comic",
+    prompt: "Use When It Counts as the visual direction for my project. Study page 4 of The Amazing Spider-Man (1963) #33, The Final Chapter, by Stan Lee and Steve Ditko. Build from black ink, costume blue, costume red, and caption yellow. Use yellow for the line that keeps the work going. Keep shapes flat, contrast hard, and decoration out.",
+  },
+  {
+    name: "Return Bolt",
+    mood: "Blue night, hard bolt",
+    description: "A slate-blue field, a black silhouette, gold type, and one white bolt. The bolt is the only break in the field.",
+    colors: ["#050B11", "#344F6C", "#FCCB22", "#EEFAFF"],
+    referenceType: "Cover reference",
+    reference: "Batman: The Dark Knight Returns, 30th Anniversary Edition cover. The lightning silhouette is the 1986 miniseries image by Frank Miller, with Klaus Janson and Lynn Varley.",
+    sceneImage: "assets/comic_panels/the-dark-knight-returns-cover.jpg",
+    referenceSource: "https://www.dc.com/graphic-novels/batman-the-dark-knight-returns-1986/batman-the-dark-knight-returns",
+    referenceTag: "Comic",
+    prompt: "Use Return Bolt as the visual direction for my project. Study the 30th Anniversary cover of Batman: The Dark Knight Returns, the lightning silhouette by Frank Miller, Klaus Janson, and Lynn Varley. Build a slate-blue field with a black figure and gold for titles. Use the white bolt once, for the break in the field. Keep the layout tall, sparse, and severe.",
+  },
 ];
 
 const STORAGE_KEY = "chromatic-index:selected-palette";
@@ -189,6 +225,18 @@ const thinking = {
   "Voice Current": {
     why: "Dark blue-grey gives focus. Coral creates immediate action. Warm white keeps the experience human and readable.",
     use: "Voice tools, productivity software, communication products, or interfaces built around quick input.",
+  },
+  "Scarlet Throne": {
+    why: "Stone black holds the room. Arch grey is the only light. Red reads as cost, not decoration.",
+    use: "Legal tools, night editorial, security products, or interfaces that need weight without neon.",
+  },
+  "When It Counts": {
+    why: "Black ink is the load. Blue and red stay flat and primary. Yellow captions carry the human line.",
+    use: "Training tools, progress trackers, sports products, or interfaces about effort under pressure.",
+  },
+  "Return Bolt": {
+    why: "Slate blue is the field. Black is the figure. Gold marks the title. White is one interruption.",
+    use: "Editorial covers, launch pages, night dashboards, or products that need one severe signal.",
   },
 };
 const elements = {
